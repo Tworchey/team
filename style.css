@@ -1,0 +1,578 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'open Sans',sans-serif;
+}
+
+header{
+    display: flex;
+    place-content: center;
+    padding-top: 1rem;
+}
+
+header nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 85%;
+}
+
+header nav  .navLinks{
+     min-width: 70%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+header nav ul > li {
+     list-style: none;
+     border: none;
+}
+
+header nav  .logo{
+    width: 70px;
+    height: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+header nav a:hover{
+    color: cadetblue;
+}
+
+
+header nav .search{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    border-radius: 500px;
+    padding: .2rem;
+}
+
+header nav .search input{
+    background-color: aliceblue;
+    border-radius: 500px;
+    border: 0;
+    padding: 5px;
+}
+
+header nav .search i{
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.hero{
+    background-image: url("picha/HEROLOGO.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.heroContents{
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex:1;
+    padding: 0 1rem 0 1rem;
+}
+.heroContents{
+    position: relative;
+    width: 90%;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.heroContents .clubinformation .clubname h1 {
+    font-family: 'arvo','serif';
+    font-size: 5rem;
+    line-height: 150px;
+}
+.heroContents .clubinformation .clubname h3{ 
+    font-size: 3rem;
+     font-family: 'serif';
+}
+
+.heroContents .clubinformation{
+    min-height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    color: #d7d5d6;
+}
+
+ .followingmatch{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    color: black;
+    gap: 1.5rem;
+    max-width: 27.7rem;
+    height: 90px;
+    background-color: #f8f8f8;
+    border-radius: 400px;
+
+}
+.heroContents .followingmatch .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroContents .followingmatch h4{
+    font-family: 'arvo','serif';
+    font-size: 1,1rem;
+    font-weight: 700;
+    line-height: 30px;
+    color: #4b188b;
+}
+.heroContents .followingmatch P {
+    color: #262f3e;
+}
+.heroContents .followingmatch .wakati{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+}
+.heroContents .followingmatch .VsSPAIN{
+    display: flex;
+    place-content: center;
+
+}
+.heroContents .followingmatch .VsSPAIN h4{
+    display: flex;
+    align-items: center;
+}
+.heroContents .followingmatch .dots{
+    height: 80%;
+    border: 1px dashed rgb(225, 11, 11);
+    align-self: flex-end;
+
+}
+
+.results{
+    display:grid;
+    grid-template-columns: auto auto;
+    background-color: #f1f1f1;
+    place-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem 3rem 2rem;
+    min-height: 240px;
+
+}
+
+.results .cards{
+    display: flex;
+    place-content: center;
+    gap: 1rem 4.4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+ .results .resultscontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    border-radius: 24px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: 280px;
+    min-width: 120px;
+
+ }
+ .results .resultscontainer img{
+    width: 80px;
+    height: auto;
+
+ }
+ .results .resultscontainer .resultstext{
+    display: flex;
+    flex-direction:column;
+    place-content: center;
+    text-align: center;
+ }
+  .results .resultscontainer .League,.Date {
+    font-size: 0.785rem;
+    color: #6c757d;
+    line-height: 24px;
+    margin: 0.2rem;
+  }
+  .results .resultscontainer .Goals{
+    font-size: 2rem;
+    line-height: 27px;
+    color: burlywood;
+    font-weight: bold;
+  }
+  
+.results .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 1rem 4rem;
+    color: #48188b;
+    font-family: serif;
+   text-align: left;
+   line-height: 35px;
+}
+ .results .heading h2{
+    color: #0b7cdf;
+    letter-spacing: 3px;
+ }
+ .results .heading p{
+    text-underline-position:below ;
+    text-decoration-line: underline;
+    color: brown;
+    font-size: 1.25rem;
+    font-family: 'arvo';
+    letter-spacing: 3px;
+ }
+.navkikosi{
+    background-color: #C6A0F8;
+}
+.navkikosi a:hover{
+    color: blueviolet;
+}
+
+
+  .kikosi{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+    background-color: #C6A0F8;
+    align-items: center;
+
+  }
+
+  .kikosi .cards .mchezaji{
+    position: relative;
+    min-height: 360px;
+    max-width: 230px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px,rgb(0, 0, 0.07);
+  }
+  .kikosi .cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,auto));
+    gap: 1rem;
+    width: 80%;
+    justify-content: center;
+  }
+  .kikosi .cards .mchezaji img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+ 
+  .kikosi h2{
+    color: #262f3e;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+
+  }
+  .kikosi h3{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: #C6A0F8;
+  }
+  .kikosi .wasifu{
+    padding: .5rem 1rem .5rem 1rem;
+  }
+  .kikosi .wasifu h5{
+    font-size: 1.5rem;
+    color: #4b188b;
+    line-height: 30px;
+    margin: 1px;
+  }
+  .kikosi .wasifu p{
+    font-size: 0.875rem;
+    color: #787878;
+  }
+  .footerkikosi{
+    background-color: #d9d9d9;
+  }
+
+
+
+
+  /* standing */
+  .leaguestandings{
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-color:#d9d9d9;
+  }
+  .leaguestandings P{
+    color: #48188b;
+    font-size: 1.5rem;
+  }
+  .leaguestandings h2,.gallery h2{
+      color: #262f3e;
+  }
+  .leaguestandings h2,.clubarchievements h2,.gallery h2{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: 'arvo','serif';
+    margin-bottom: 2rem;
+ }
+  .leaguestandings h2{
+    color: #262f3e;
+  }
+  
+  .leaguestandings td,th {
+    padding: 10px 50px 10px 50px;
+  }
+  .leaguestandings td{
+    font-size: 14px;
+     border: 1px solid #878787;
+  }
+ 
+
+  .leaguestandings table{
+    text-align: center;
+    border-collapse: collapse;
+  }
+  .leaguestandings .headers{
+    background-color: #878787;
+    font-family:  serif;
+  }
+.leaguestandings th:first-child{
+    border-radius: 50px 0 0 50px;
+}
+.leaguestandings th:last-child{
+    border-radius: 0 50px 50px 0;
+}
+/* archievements */
+.clubarchievements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b188b;
+    min-height: 90vh;
+    padding: 6rem 2rem 6rem 2rem;
+    color: #d9d9d9;
+}
+.clubarchievements .titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.clubarchievements .subtitle{
+    background-color: #C6A0F8;
+    padding: 10px;
+    border-radius: 5px;
+}
+.clubarchievements h2{
+    margin-top: 2rem;
+}
+.clubarchievements .titles .cup{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.clubarchievements .titles .cup h3{
+    font-size: 3em;
+    line-height: 4rem;
+    font-family: 'arvo','serif';
+}
+.clubarchievements #mafanikiopara{
+    max-width: 60%;
+    margin-top: 2rem;
+}
+.clubarchievements .titles .cup img{
+    max-width: 250px;
+    margin:2rem;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem 6rem 2rem;
+    background-color: #d9d9d9;
+
+} .photoscontainer{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+.gallery img{
+    max-width: 250px;
+    height: auto;
+    border-radius: 24px;
+}
+
+/* footer comments */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2rem 1rem 2rem 1rem;
+    color: #7506e3;
+    background-size: cover;
+    align-items: center;
+    gap: 1rem;
+  min-height: 80vh;
+  background-color:purple;
+
+}
+footer .footerup, footer .footerdown{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+footer .footerdown img{
+    width: 50px;
+    height: auto;
+}
+footer .footerup {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footerup .formcontainer input, button{
+    outline: 0;
+    border: 0;
+    padding: 10px;
+}
+footer .footerup .formcontainer input{
+border-radius: 100px 0 0 100px;
+}
+footer .footerup .formcontainer button{
+    border-radius: 0 100px 100px 0;
+    font-weight: bold;
+    background-color: #4b188b;
+    color: white;
+    cursor: pointer;
+}
+footer form{
+    font-size: 0;
+}
+footer .footerup .formcontainer button:hover{
+    background-color: #C6A0F8;
+    color: #262f3e;
+}
+
+footer h4{
+    margin-bottom: 1rem;
+}
+footer .address p{
+    line-height: 1.5rem;
+}
+
+footer .paragraph{
+    font-size: 14px;
+    color: #878787;
+}
+footer .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+footer  .footerdown .socials a{
+    text-decoration: none;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#f8f8f8;
+    border: 1px solid #787878;
+    padding: 10px;
+    border-radius:20px;
+    height: 50px;
+    width: 50px;
+
+}
+
+footer .footerdown .socials a:hover {
+    background-color: #48188b;
+    color: #f8f8f8;
+    border: 0;
+
+}
+
+@media(max-width:1300px){
+.results .cards{
+    flex-wrap: wrap;
+    grid-row: 2;
+}
+.results{
+    grid-template-columns: auto;
+}
+.leaguestandings{
+    overflow: hidden;
+}
+
+.leaguestandings table{
+    overflow-x: auto;
+    display: block;
+    max-width: 100%;
+}
+.clubarchievements #mafanikiopara{
+    max-width: 90%;
+}
+footer .footerdown,footer .footerup{
+    width: 100%;
+    gap: 1rem;
+}
+.heroContents .clubinformation .clubname h1{
+    font-size: 3.4rem;
+    align-items: left;
+}
+.heroContents .clubinformation .clubname h3{
+    font-size: 2rem;
+}
+.heroContents .followingmatch .VsSPAIN h4{
+    font-size: 1rem;
+}
+.followingmatch{
+    gap: .5rem;
+}
+.heroContents .followingmatch .wakati{
+    margin: .3rem;
+}
+
+header nav{
+    display: flex;
+    flex-direction:column;
+}
+header .navLinks{
+    gap: .5rem;
+    font-size: .7rem;
+}
+}
